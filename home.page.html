@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="icon.css" />
+    <style>
+      body {
+        margin: 0;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 120px;
+        padding-right: 200px;
+        padding-left: 190px;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 40px;
+        margin: 0;
+        padding: 0;
+      }
+
+      li a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .nav-toggle {
+        display: none;
+      }
+
+      .hamburger {
+        display: none;
+        width: 36px;
+        height: 36px;
+        border: 1px solid #d9d9d9;
+        border-radius: 8px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background: #fff;
+      }
+
+      .hamburger span,
+      .hamburger span::before,
+      .hamburger span::after {
+        display: block;
+        width: 18px;
+        height: 2px;
+        background: #1f1f1f;
+        position: relative;
+        transition: 0.25s ease;
+        content: "";
+      }
+
+      .hamburger span::before {
+        top: -6px;
+      }
+
+      .hamburger span::after {
+        top: 4px;
+      }
+
+      @media (max-width: 600px) {
+        header {
+          padding: 14px 16px;
+          position: relative;
+        }
+
+        .hamburger {
+          display: inline-flex;
+        }
+
+        .nav-menu {
+          display: none;
+          position: absolute;
+          right: 16px;
+          top: 62px;
+          background: #fff;
+          border: 1px solid #e8e8e8;
+          border-radius: 12px;
+          box-shadow: 0 14px 34px rgba(0, 0, 0, 0.08);
+          padding: 12px 16px;
+          z-index: 1000;
+        }
+
+        .nav-links {
+          flex-direction: column;
+          gap: 14px;
+          min-width: 160px;
+        }
+
+        .nav-toggle:checked ~ .nav-menu {
+          display: block;
+        }
+      }
+
+      @media (min-width: 601px) and (max-width: 768px) {
+        header {
+          padding: 16px 24px;
+          position: relative;
+        }
+
+        .hamburger {
+          display: inline-flex;
+        }
+
+        .nav-menu {
+          display: none;
+          position: absolute;
+          right: 24px;
+          top: 66px;
+          background: #fff;
+          border: 1px solid #e8e8e8;
+          border-radius: 12px;
+          box-shadow: 0 14px 34px rgba(0, 0, 0, 0.08);
+          padding: 14px 18px;
+          z-index: 1000;
+        }
+
+        .nav-links {
+          flex-direction: column;
+          gap: 16px;
+          min-width: 180px;
+        }
+
+        .nav-toggle:checked ~ .nav-menu {
+          display: block;
+        }
+      }
+
+      @media (min-width: 769px) and (max-width: 998px) {
+        header {
+          padding: 18px 72px;
+          padding-right: 86px;
+          padding-left: 78px;
+        }
+
+        .nav-menu {
+          display: block;
+        }
+
+        .nav-links {
+          gap: 28px;
+        }
+
+        li a {
+          font-size: 15px;
+        }
+
+        header img {
+          width: 170px;
+          height: auto;
+        }
+      }
+
+     
+            
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+         <img src="img/Group 18.png" alt="logo">
+        </div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="hamburger" aria-label="Open navigation menu">
+                <span></span>
+            </label>
+            <nav class="nav-menu"> 
+                <ol class="nav-links">
+                    <li><a href="#home" style="color: rgb(69, 217, 69);">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="training">Trainings</a></li>
+                    <li><a href="contactus">Contact Us</a></li>
+                </ol>
+            </nav>
+    </header>
+    <section>
+        <div class="container">
+            <img src="img/Rectangle 2.png" alt="img">
+            <div class="hero-content">
+                <h1 style="color: #05A93D;">Ground up</h1>
+                <h1 style="color: #F67C01;">psychedelic institute.</h1>
+                <p>Ground up psychedelic institute supports Mental Health practioners<br> to reorient their 
+                    psycho therapatic apptoach to support their clients <br>Bottom up (felt lead) processing.
+                    which is activated whilst participating<br> in psychedelic Medical experience</p>
+                <p>psychedelic Medical experience are emerged,intra-relational,felt <br>and here and now enconter.
+                    we help therapist link emerged,intra-relatinal, <br>felt lead,and now approaches to Psychedelic<br>
+                    Assisted Psychotherapy
+                </p>
+                <a href="#" class="btn">Read More</a> 
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="mycontainer-row">
+            <div class="mycontainer">
+                <img src="img/Vector (7).png" alt="icon">
+                <h1>Emergent</h1>
+                <p>Emergent-arising with the broader<br>whole of existence.
+                    An interplay from<br>which ones experience originally emerges.<br>
+                    This is quitre opposit to a reduction into
+                </p>
+            </div>
+            <div class="mycontainer">
+                <img src="img/Vector@2x.png" alt="icon" >
+                <h1>Intre-relational</h1>
+                <p>Intre-relational a process ofnrelating<br>
+                   dynamically and internally with alive <br>
+                   aspect of ourself</p>
+            </div>
+            <div class="mycontainer">
+                <img src="img/Vector (8).png" alt="icon">
+                <h1>Felt</h1>
+                <p>Felt-Visceral and somatic information<br>
+                   becoming infinitely more accessible and <br>
+                   interpretable</p>
+            </div>
+            <div class="mycontainer">
+                <img src="img/Vector (9).png" alt="icon">
+                <h1>Here and now</h1>
+                <p>Here and now-present.A deep capacity<br>
+                   now,primarily again via sentation<br>
+                   lead information</p>
+            </div>
+        </div>
+    </sectōion>
+    <section style="background-color: whitesmoke;">
+         <h1 style="text-align: center;padding-top: 76px;font-size: 43px;">Trainings</h1>
+         <p style="text-align: center;padding-top: 10px;font-size: 17px;color: #777777;">This training is for Mental Helth practioners interested in the field of PAP and<br>
+            well as practioners who are already working in the field looking to develop their <br>
+            skills and orientation in PAP</p>
+            <div class="mycontainer1-row">
+                <div class="mycontainer1">
+                    <img src="img/Rectangle 8.png" alt="img">
+                    <h2 class="module-tag">Module 1</h2>
+                    <h1>Bridging the Triad of therapist<br> Clint and Medicin</h1>
+                      <p>Support Therapist to guid clients deeply<br>
+                         into their felt experience,both in <br>
+                         Psychotherapy and Non ordinary<br>
+                        experieces,as the paathway to deeper,<br>
+                        more fundemental insights and subsequent<br>change.</p>
+                    <a href="#" class="btn1">Read more</a>   
+
+                </div>
+                <div class="mycontainer1">
+                    <img src="img/Rectangle 8 (1).png" alt="img">
+                      <h2 class="module-tag">Module 2</h2>
+                      <h1>Bridging the Triad of therapist<br> Clint and Medicin</h1>
+                      <p>Support Therapist to guid clients deeply<br>
+                         into their felt experience,both in <br>
+                         Psychotherapy and Non ordinary<br>
+                        experieces,as the paathway to deeper,<br>
+                        more fundemental insights and subsequent<br>change.</p>
+                    <a href="#" class="btn1">Read more</a>
+                      
+
+                </div>
+                <div class="mycontainer1">
+                    <img src="img/Rectangle 8 (2).png" alt="limg">
+                    <h2 class="module-tag">Module 3</h2>
+                    <h1>Bridging the Triad of therapist<br> Clint and Medicin</h1>
+                      <p>Support Therapist to guid clients deeply<br>
+                         into their felt experience,both in <br>
+                         Psychotherapy and Non ordinary<br>
+                        experieces,as the paathway to deeper,<br>
+                        more fundemental insights and subsequent<br>change.</p>
+                    <a href="#"  class="btn1">Read more</a>
+
+                </div>
+
+            </div>
+    </section>
+    <section class="Robbie">
+        <div class="mycontainer2-row">
+            <div class="mycontainer2">
+             <img src="img/Vector (10).png" alt="img">
+            </div>
+      
+             <div class="mycontainer2">
+            <h1>About Robbie</h1>
+            <p>Robbie has been in clinical private practice for over 18 years and has<br>
+                 explored his own plant medicine path for over 14 years, having <br>
+                 worked therapeutically and extensively with 16 Psychedelic and Plant<br>
+                 medicines himself; He has also worked with over 300 clients clinically<br>
+                 to prepare for and integrate their own Psychedelic Medicine and <br>
+                 plant medicine experiences. Robbie's interest is in bridging the gap<br>
+                 between contemporary PAP approaches, which are strongly<br>
+                 academically (top down) influenced, with the learnings of therapists<br>
+                  and medicine people who have learnt directly from and with<br>
+                   Psychedelic medicines themselves.
+               </p>
+                <a href="#" class="btn">Read More</a>   
+             </div>
+        </div>    
+    </section>
+    <section class="contact-section">
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+
+    <form class="contact-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fname">First Name*</label>
+          <input type="text" id="fname" required>
+        </div>
+
+        <div class="form-group">
+          <label for="surname">Surname*</label>
+          <input type="text" id="surname" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">E-mail*</label>
+          <input type="email" id="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone*</label>
+          <input type="tel" id="phone" required>
+        </div>
+      </div>
+
+      <div class="form-group full-width">
+        <label for="message">Message*</label>
+        <textarea id="message" rows="4" required></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+</section>
+        <footer style="background-color: #05A93D;text-align: center;">
+           <div>
+             <img src="img/Group 19.png" alt="logo" 
+             style="text-align: center;margin-top: 65px;width: 229px;height: 64.22px;">
+           </div>
+                <div style="display: flex;flex-direction: row;gap: 80px;text-align: center;
+                            margin: auto;width: 554px;height: 21px;">
+                    <h2 style="font-size: 17px;color: white;">Home</h2>
+                    <h2 style="font-size: 17px;color: white;">About Us</h2>
+                    <h2 style="font-size: 17px;color: white;">Trainings</h2>
+                    <h2 style="font-size: 17px;color: white;">Contact Us</h2>
+                </div>
+                
+                    <div class="icons-row">
+                        <div class="icon-box">
+                            <img src="img/Vector (6).png" alt="icon">
+                        </div>
+                        <div class="icon-box">
+                            <img src="img/Vector (5).png" alt="icon">
+                        </div>
+                        <div class="icon-box">
+                            <img src="img/Vector (4).png" alt="icon">
+                        </div>
+                        <div class="icon-box">
+                            <img src="img/Vector (3).png" alt="icon">
+                        </div>
+                    </div>
+                    
+                    
+                        <div>
+                            <h3 style="font-size: 14px;color: white;">Ground up psychedelic institution | All Rights Reserved.</h3>
+                        </div>
+                        <br><br>
+
+
+        </footer>
+    
+</body>
+</html>
