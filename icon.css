@@ -264,7 +264,7 @@
   padding: 8px 0;
   font-size: 16px;
   outline: none;
-  transition: 0.3s ease;
+  
   background: transparent;
 }
 
@@ -291,6 +291,35 @@
 
 .submit-btn:hover {
   background: #d85c12;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.contact-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 6px;
+  margin-bottom: 100px;
+  margin-top: 83px;
+}
+
+.contact-form {
+  width: 40%;
+}
+
+.contact-info {
+  width: 30%;
 }
 
 @media (max-width: 600px) {

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="icon.css" />
+    <style>
+      body {
+        margin: 0;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 120px;
+        padding-right: 200px;
+        padding-left: 190px;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 40px;
+        margin: 0;
+        padding: 0;
+      }
+
+      li a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .nav-toggle {
+        display: none;
+      }
+
+      .hamburger {
+        display: none;
+        width: 36px;
+        height: 36px;
+        border: 1px solid #d9d9d9;
+        border-radius: 8px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background: #fff;
+      }
+
+      .hamburger span,
+      .hamburger span::before,
+      .hamburger span::after {
+        display: block;
+        width: 18px;
+        height: 2px;
+        background: #1f1f1f;
+        position: relative;
+        transition: 0.25s ease;
+        content: "";
+      }
+
+      .hamburger span::before {
+        top: -6px;
+      }
+
+      .hamburger span::after {
+        top: 4px;
+      }
+
+      @media (max-width: 600px) {
+        header {
+          padding: 14px 16px;
+          position: relative;
+        }
+
+        .hamburger {
+          display: inline-flex;
+        }
+
+        .nav-menu {
+          display: none;
+          position: absolute;
+          right: 16px;
+          top: 62px;
+          background: #fff;
+          border: 1px solid #e8e8e8;
+          border-radius: 12px;
+          box-shadow: 0 14px 34px rgba(0, 0, 0, 0.08);
+          padding: 12px 16px;
+          z-index: 1000;
+        }
+
+        .nav-links {
+          flex-direction: column;
+          gap: 14px;
+          min-width: 160px;
+        }
+
+        .nav-toggle:checked ~ .nav-menu {
+          display: block;
+        }
+      }
+
+      @media (min-width: 601px) and (max-width: 768px) {
+        header {
+          padding: 16px 24px;
+          position: relative;
+        }
+
+        .hamburger {
+          display: inline-flex;
+        }
+
+        .nav-menu {
+          display: none;
+          position: absolute;
+          right: 24px;
+          top: 66px;
+          background: #fff;
+          border: 1px solid #e8e8e8;
+          border-radius: 12px;
+          box-shadow: 0 14px 34px rgba(0, 0, 0, 0.08);
+          padding: 14px 18px;
+          z-index: 1000;
+        }
+
+        .nav-links {
+          flex-direction: column;
+          gap: 16px;
+          min-width: 180px;
+        }
+
+        .nav-toggle:checked ~ .nav-menu {
+          display: block;
+        }
+      }
+
+      @media (min-width: 769px) and (max-width: 998px) {
+        header {
+          padding: 18px 72px;
+          padding-right: 86px;
+          padding-left: 78px;
+        }
+
+        .nav-menu {
+          display: block;
+        }
+
+        .nav-links {
+          gap: 28px;
+        }
+
+        li a {
+          font-size: 15px;
+        }
+
+        header img {
+          width: 170px;
+          height: auto;
+        }
+      }
+
+     
+            
+    </style>
+</head>
+<body>
+   
+    <header>
+        <div>
+        <a href="home.page.html">   
+         <img src="img/Group 18.png" alt="logo">
+        </a>
+        </div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="hamburger" aria-label="Open navigation menu">
+                <span></span>
+            </label>
+            <nav class="nav-menu"> 
+                <ol class="nav-links">
+                    <li><a href="home.page.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#training" style="color: rgb(69, 217, 69);">Trainings</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ol>
+            </nav>
+    </header>
+    <section>
+
+    </section>
+    <footer style="background-color: #05A93D;text-align: center;">
+           <div>
+             <img src="img/Group 19.png" alt="logo" 
+             style="text-align: center;margin-top: 65px;width: 229px;height: 64.22px;">
+           </div>
+                <div style="display: flex;flex-direction: row;gap: 80px;text-align: center;
+                            margin: auto;width: 554px;height: 21px;">
+                    <h2 style="font-size: 17px;color: white;">Home</h2>
+                    <h2 style="font-size: 17px;color: white;">About Us</h2>
+                    <h2 style="font-size: 17px;color: white;">Trainings</h2>
+                    <h2 style="font-size: 17px;color: white;">Contact Us</h2>
+                </div>
+                
+                    <div class="icons-row">
+                        <div class="icon-box">
+                            <img src="img/Vector (6).png" alt="icon">
+                        </div>
+                        <div class="icon-box">
+                            <img src="img/Vector (5).png" alt="icon">
+                        </div>
+                        <div class="icon-box">
+                            <img src="img/Vector (4).png" alt="icon">
+                        </div>
+                        <div class="icon-box">
+                            <img src="img/Vector (3).png" alt="icon">
+                        </div>
+                    </div>
+                    
+                    
+                        <div>
+                            <h3 style="font-size: 14px;color: white;">Ground up psychedelic institution | All Rights Reserved.</h3>
+                        </div>
+                        <br><br>
+
+
+        </footer>
+    
+</body>
+</html>
