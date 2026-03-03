@@ -1,4 +1,164 @@
 
+ body {
+        font-family: "Gilroy-Medium", sans-serif ;
+        margin: 0;
+      }
+      p{
+        color: #777777;
+        font-size: 15px;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 120px;
+        padding-right: 200px;
+        padding-left: 190px;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 40px;
+        margin: 0;
+        padding: 0;
+      }
+
+      li a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .nav-toggle {
+        display: none;
+      }
+
+      .hamburger {
+        display: none;
+        width: 36px;
+        height: 36px;
+        border: 1px solid #d9d9d9;
+        border-radius: 8px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background: #fff;
+      }
+
+      .hamburger span,
+      .hamburger span::before,
+      .hamburger span::after {
+        display: block;
+        width: 18px;
+        height: 2px;
+        background: #1f1f1f;
+        position: relative;
+        transition: 0.25s ease;
+        content: "";
+      }
+
+      .hamburger span::before {
+        top: -6px;
+      }
+
+      .hamburger span::after {
+        top: 4px;
+      }
+
+      @media (max-width: 600px) {
+        header {
+          padding: 14px 16px;
+          position: relative;
+        }
+
+        .hamburger {
+          display: inline-flex;
+        }
+
+        .nav-menu {
+          display: none;
+          position: absolute;
+          right: 16px;
+          top: 62px;
+          background: #fff;
+          border: 1px solid #e8e8e8;
+          border-radius: 12px;
+          box-shadow: 0 14px 34px rgba(0, 0, 0, 0.08);
+          padding: 12px 16px;
+          z-index: 1000;
+        }
+
+        .nav-links {
+          flex-direction: column;
+          gap: 14px;
+          min-width: 160px;
+        }
+
+        .nav-toggle:checked ~ .nav-menu {
+          display: block;
+        }
+      }
+
+      @media (min-width: 601px) and (max-width: 768px) {
+        header {
+          padding: 16px 24px;
+          position: relative;
+        }
+
+        .hamburger {
+          display: inline-flex;
+        }
+
+        .nav-menu {
+          display: none;
+          position: absolute;
+          right: 24px;
+          top: 66px;
+          background: #fff;
+          border: 1px solid #e8e8e8;
+          border-radius: 12px;
+          box-shadow: 0 14px 34px rgba(0, 0, 0, 0.08);
+          padding: 14px 18px;
+          z-index: 1000;
+        }
+
+        .nav-links {
+          flex-direction: column;
+          gap: 16px;
+          min-width: 180px;
+        }
+
+        .nav-toggle:checked ~ .nav-menu {
+          display: block;
+        }
+      }
+
+      @media (min-width: 769px) and (max-width: 998px) {
+        header {
+          padding: 18px 72px;
+          padding-right: 86px;
+          padding-left: 78px;
+        }
+
+        .nav-menu {
+          display: block;
+        }
+
+        .nav-links {
+          gap: 28px;
+        }
+
+        li a {
+          font-size: 15px;
+        }
+
+        header img {
+          width: 170px;
+          height: auto;
+        }
+      }
+
 .icon-box {
   width: 40px;
   height: 40px;
@@ -42,7 +202,7 @@
       .hero-content h1 {
         margin: 0;
         line-height: 1.1;
-        font-size: 62px;
+        font-size: 52px;
 
       }
 
@@ -76,7 +236,7 @@
     padding-top: 34px;
     padding-left: 33px;
     padding-right: 27px;
-    width: 380px;
+    width: 480px;
     height: 341px;
     background-color:#FFFFFF;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
@@ -103,7 +263,7 @@
 .mycontainer p{
     margin-top: 12px;
     margin-bottom: 0;
-    font-size: 17px;
+    font-size: 15px;
     color: #777777;
     text-align: left;
 
@@ -120,20 +280,20 @@
     margin-bottom: 134px;
     
 }
-.mycontainer{
+.mycontainers {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    margin-top: 60px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     margin-left: 0;
     margin-right: 0;
     padding-bottom: 31px;
     padding-top: 34px;
-    padding-left: 33px;
-    padding-right: 27px;
-    width: 283px;;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 280px;
     height: 250px;
     background-color:#FFFFFF;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
@@ -157,27 +317,27 @@
     text-align: left;
 
 }
-.mycontainers p{
+.mycontainers{
     margin-top: 12px;
     margin-bottom: 0;
-    font-size: 13px;
+    font-size: 17px;
     color: #777777;
     text-align: left;
-    width: 239px;
-    height: 65px;
 
 }
 .mycontainesrow{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 20px;
+    gap: 30px;
     margin:auto;
     width:75%;
     height: auto;
-    margin-top: 183px;
-    margin-bottom: 134px;
+    margin-top: 30px;
+    margin-bottom: 34px;
+    
 }
+
 .mycontainer1{
     display: flex;
     flex-direction: column;
@@ -475,6 +635,12 @@ li{
   color: #777777;
   margin: 15px;
 }
+.module-section P{
+  color: #555555;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
 .mycontainer3{
     display: flex;
     flex-direction: column;
@@ -568,7 +734,7 @@ li{
     box-sizing: border-box;
     margin: 0;
   }
-  .mycontaines-row {
+  .mycontainesrow {
     width: 100%;
     margin-top: 48px;
     margin-bottom: 48px;
@@ -774,7 +940,7 @@ li{
     width: 100%;
     box-sizing: border-box;
   }
-.mycontaines-row {
+.mycontainesrow {
     width: 100%;
     margin-top: 80px;
     margin-bottom: 72px;
@@ -987,7 +1153,7 @@ li{
     box-sizing: border-box;
     padding: 24px 18px 26px;
   }
-    .mycontaines-row {
+    .mycontainesrow {
     width: 100%;
     margin-top: 110px;
     margin-bottom: 96px;

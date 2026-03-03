@@ -4,173 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="icon.css" />
-    <style>
-     body {
-        font-family: "Gilroy-Medium", sans-serif ;
-        margin: 0;
-      }
+    <link rel="stylesheet" href="style.css" />
 
-      header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 20px 120px;
-        padding-right: 200px;
-        padding-left: 190px;
-      }
-
-      .nav-links {
-        list-style: none;
-        display: flex;
-        gap: 40px;
-        margin: 0;
-        padding: 0;
-      }
-
-      li a {
-        text-decoration: none;
-        color: black;
-      }
-
-      .nav-toggle {
-        display: none;
-      }
-
-      .hamburger {
-        display: none;
-        width: 36px;
-        height: 36px;
-        border: 1px solid #d9d9d9;
-        border-radius: 8px;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        background: #fff;
-      }
-
-      .hamburger span,
-      .hamburger span::before,
-      .hamburger span::after {
-        display: block;
-        width: 18px;
-        height: 2px;
-        background: #1f1f1f;
-        position: relative;
-        transition: 0.25s ease;
-        content: "";
-      }
-
-      .hamburger span::before {
-        top: -6px;
-      }
-
-      .hamburger span::after {
-        top: 4px;
-      }
-
-      @media (max-width: 600px) {
-        header {
-          padding: 14px 16px;
-          position: relative;
-        }
-
-        .hamburger {
-          display: inline-flex;
-        }
-
-        .nav-menu {
-          display: none;
-          position: absolute;
-          right: 16px;
-          top: 62px;
-          background: #fff;
-          border: 1px solid #e8e8e8;
-          border-radius: 12px;
-          box-shadow: 0 14px 34px rgba(0, 0, 0, 0.08);
-          padding: 12px 16px;
-          z-index: 1000;
-        }
-
-        .nav-links {
-          flex-direction: column;
-          gap: 14px;
-          min-width: 160px;
-        }
-
-        .nav-toggle:checked ~ .nav-menu {
-          display: block;
-        }
-      }
-
-      @media (min-width: 601px) and (max-width: 768px) {
-        header {
-          padding: 16px 24px;
-          position: relative;
-        }
-
-        .hamburger {
-          display: inline-flex;
-        }
-
-        .nav-menu {
-          display: none;
-          position: absolute;
-          right: 24px;
-          top: 66px;
-          background: #fff;
-          border: 1px solid #e8e8e8;
-          border-radius: 12px;
-          box-shadow: 0 14px 34px rgba(0, 0, 0, 0.08);
-          padding: 14px 18px;
-          z-index: 1000;
-        }
-
-        .nav-links {
-          flex-direction: column;
-          gap: 16px;
-          min-width: 180px;
-        }
-
-        .nav-toggle:checked ~ .nav-menu {
-          display: block;
-        }
-      }
-
-      @media (min-width: 769px) and (max-width: 998px) {
-        header {
-          padding: 18px 72px;
-          padding-right: 86px;
-          padding-left: 78px;
-        }
-
-        .nav-menu {
-          display: block;
-        }
-
-        .nav-links {
-          gap: 28px;
-        }
-
-        li a {
-          font-size: 15px;
-        }
-
-        header img {
-          width: 170px;
-          height: auto;
-        }
-      }
-
-     
-            
-    </style>
 </head>
 <body>
    
     <header style="box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
         <div>
-        <a href="home.page.html">
+        <a href="index.html">
          <img src="img/Group 18.png" alt="logo">
         </a>
         </div>
@@ -180,7 +21,7 @@
             </label>
             <nav class="nav-menu"> 
                 <ol class="nav-links">
-                    <li><a href="home.page.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="training.html">Trainings</a></li>
                     <li><a href="#contactus" style="color: rgb(69, 217, 69);">Contact Us</a></li>
@@ -196,14 +37,14 @@
             <h1>Contact information</h1>
             <p>Contact us or simply fill in the form and we will <br>get back to you as soon as possible</p>
          <div class="info-items">
-            <img src="img/Vector (13).png"style="width:10px;height: 14px; ;" alt="icon" class="icon"><span> +(123)456-7890</span>
+            <img src="img/Vector (13).png"style="width:10px;height: 14px;" alt="icon" class="icon"><span style="color: #777777;margin-bottom: 30px;"> +(123)456-7890</span>
          </div>
          <div class="info-items">
-            <img src="img/Vector (11).png"style="width:12.5px ;height:10px ;" alt="icon" class="icon"><span> demo@gmail.com</span>
+            <img src="img/Vector (11).png"style="width:12.5px ;height:10px ;" alt="icon" class="icon"><span style="color: #777777;margin-bottom: 30px;"> demo@gmail.com</span>
          </div>
          <div class="info-items">
-            <img src="img/Vector (12).png" style="width:11.5p ;height:14.12px;" alt="icon" class="icon"><span>Lorem ipspem is just a dummy text of the</span><br>
-               <span>    prinitng and typesetting</span>
+            <img src="img/Vector (12).png" style="width:11.5p ;height:14.12px;" alt="icon" class="icon"><span style="color: #777777;margin-bottom: 30px;">Lorem ipspem is just a dummy text of the</span><br>
+               <span style="color: #777777;margin-bottom: 30px;">    prinitng and typesetting</span>
          </div>
         </div>    
     <form class="contact2-form">
@@ -251,7 +92,7 @@
            </div>
               <div style="display: flex;flex-direction: row;gap: 80px;text-align: center;
                             margin: auto;width: 554px;height: 21px;margin-top: 38px;">
-                     <a href="home.page.html" style="font-size: 17px;color: white;text-decoration: none;">Home</h2></a>
+                     <a href="index.html" style="font-size: 17px;color: white;text-decoration: none;">Home</h2></a>
                      <a href="about.html" style="font-size: 17px;color: white;text-decoration: none;">About Us</h2>
                      <a href="training.html" style="font-size: 17px;color: white;text-decoration: none;">Trainings</h2>
                      <a href="contact.html" style="font-size: 17px;color: white;text-decoration:none ;">Contact Us</h2>
